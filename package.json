@@ -1,0 +1,13 @@
+{
+  "name": "lab-nodejs-threejs",
+  "version": "0.0.1",
+  "description": "lab-nodejs-threejs",
+  "license": "ISC",
+  "author": "Gerardo Jaramillo",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production",
+    "start": "webpack serve --open"
+  }
+}
