@@ -1,7 +1,7 @@
 ## GitHub
 
 ```
-git clone git@github.com:gerardojaramillo/lab-nodejs-threejs.git
+git clone https://github.com/gerardojaramillo/lab-nodejs-threejs.git
 ```
 Cool, you have a copy !
 
