@@ -29,7 +29,7 @@ document.body.appendChild(renderer.domElement);
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 
-scene.add(new THREE.AmbientLight(0xffffff, 0.1));
+scene.add(new THREE.AmbientLight(0xffffff, 1.0));
 
 const sunLight = new THREE.DirectionalLight(0xffffff, 1);
 sunLight.position.set(20, 10, 20);
@@ -40,9 +40,8 @@ scene.add(earthGroup);
 earthGroup.rotation.order = 'ZXY';
 earthGroup.rotation.z = AXIAL_TILT;
 
-const geometry = new THREE.SphereGeometry(RADIUS, 16, 16);
-const material = new THREE.MeshPhongMaterial({ color: 0xf5f7fa, shininess: 5 });
-// const material = new THREE.MeshBasicMaterial({ color: 0xe6e9ed, wireframe: true });
+const geometry = new THREE.SphereGeometry(RADIUS, 32, 32);
+const material = new THREE.MeshPhongMaterial({ color: 0xb39ddb, shininess: 5 });
 const earth = new THREE.Mesh(geometry, material);
 earthGroup.add(earth);
 

@@ -1,0 +1,17 @@
+services:
+  lab-nodejs-leaflet:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    image: lab-nodejs-threejs:0.0.1
+    container_name: lab-nodejs-threejs
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+      - WATCHPACK_POLLING=true
+    stdin_open: true
+    tty: true
