@@ -28,3 +28,5 @@ docker compose down (shut it down)
 after a few seconds the image is created, open browser and type http://localhost:8080/
 
 Ualá ! a basic threejs with a geojson world map ! but with a lot of potential.
+
+![Alt text](screenshot/lab-nodejs-threejs.png)
